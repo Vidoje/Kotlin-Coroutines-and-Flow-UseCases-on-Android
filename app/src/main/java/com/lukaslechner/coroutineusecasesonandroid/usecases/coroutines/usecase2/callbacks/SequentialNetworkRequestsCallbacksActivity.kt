@@ -32,7 +32,7 @@ class SequentialNetworkRequestsCallbacksActivity : BaseActivity() {
             }
         })
         binding.btnRequestsSequentially.setOnClickListener {
-            viewModel.perform2SequentialNetworkRequest()
+            viewModel.performRequestWithCoroutine()
         }
     }
 
